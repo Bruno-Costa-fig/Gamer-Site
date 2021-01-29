@@ -1,0 +1,187 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Hanalei&family=Nunito:ital,wght@0,400;0,600;0,800;1,400&family=Potta+One&family=Quicksand:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --font-primary: "Nunito", sans-serif;
+    --font-secondary: "Quicksand", sans-serif;
+    --font-header: "Potta One", sans-serif;
+    --font-button: "Hanalei", sans-serif;
+}
+
+h1{
+    color: #439fad;
+}
+
+h2, h3, p, i{
+    color: #6dc8d6;
+}
+
+i{
+    font-size: 2rem;
+}
+
+main{
+    min-height: 100vh;
+    background: linear-gradient(to right top, #65ffc9, #6cdbeb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.glass{
+    background-color: white;
+    height: 80vh;
+    width: 60%;
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.6), rgba(255,255,255,0.2));
+    border-radius: 2rem;
+    z-index: 2;
+    backdrop-filter: blur(2rem);
+    display: flex;
+}
+
+.circle1,.circle2{
+    background: white;
+    background: linear-gradient(to right bottom,rgba(255,255,255,0.7), rgba(255,255,255,0.5));
+    height: 20rem;
+    width: 20rem;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circle1{
+    top: 5%;
+    right: 15%;
+}
+
+.circle2{
+    bottom: 5%;
+    left: 10%;
+}
+
+.user h3{
+    font-family: var(--font-header);
+}
+
+.user p{
+    font-family: var(--font-secondary);
+}
+
+.user img{
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+}
+
+.dashboard{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.5), rgba(255,255,255,0.3));
+    border-radius: 2rem;
+}
+
+.link{
+    display: flex;
+    margin: 2rem 0rem;
+    padding: 1rem 5rem;
+    align-items: center;
+    font-family: var(--font-secondary);
+}
+
+.link h2{
+    padding: 0rem 2rem;
+}
+
+.pro{
+    font-family: var(--font-button);
+    background: linear-gradient(to right top, #65ffc9, #6cdbeb);
+    padding: 1rem;
+    border-radius: 2rem;
+    color: rgb(26, 26, 26);
+}
+
+/* seção dos games */
+
+.status h1{
+    font-family: var(--font-primary);
+    opacity: 0.8;
+    font-weight: bolder;
+    font-size: 3rem;
+}
+
+.status input{
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
+    border: none;
+    width: 50%;
+    padding: 0.5rem;
+    border-radius: 2rem;
+}
+
+.games{
+    flex: 2;
+    margin: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.card{
+    display: flex;
+    background: linear-gradient(to left top, 
+    rgba(255,255,255,0.8),
+    rgba(255,255,255,0.5)
+    );
+    border-radius: 1rem;
+    justify-content: space-between;
+    margin: 2rem 0rem;
+    padding: 2rem;
+    box-shadow: 0.3rem 0.3rem 0.8rem rgba(122,122,122,0.3);
+}
+
+.card img{
+    width: 8rem;
+    height: 5rem;
+}
+
+.card-info h2{
+    font-family: var(--font-primary);
+}
+
+.card-info p{
+    font-family: var(--font-secondary);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.percentage{
+    font-family: var(--font-primary);
+    opacity: 70%;
+}
+
+.progress{
+    background: linear-gradient(to right top, #65ffc9, #6cdbeb);
+    width: 100%;
+    height: 25%;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(231, 231, 231);
+    position: absolute;
+    left: 60%;
+}
